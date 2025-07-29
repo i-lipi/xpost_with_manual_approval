@@ -1,0 +1,17 @@
+verify_x_post:
+  description: >
+    Verify that the given X post has between 100 to 150 characterss and contains only the post itself, without additional commentary.
+
+    If any of the criteria are not met, the post is considered invalid.
+    Provide actionable changes about what is wrong and what actions
+    need to be taken to fix the post.
+    
+    Your final response must include:
+    - Valid: True/False
+
+    X Post to Verify: 
+    {x_post}
+  expected_output: >
+    Pass: True/False
+
+  agent: x_post_verifier
